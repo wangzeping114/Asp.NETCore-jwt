@@ -1,0 +1,131 @@
+﻿@model AddUserInput;
+@{
+    ViewData["Title"] = "Add";
+}
+
+<article class="page-container">
+    <form id="form-add" name="form" action="@Url.Action("add")" method="post" class="form form-horizontal" >
+        <div class="row cl">
+            <div class="admin-add-top-tips">提示：账号密码必须在四位长度以上。</div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>账号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input id="username" asp-for="UserName" type="text" placeholder="账户" class="input-text" value="" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>密码：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input id="password" asp-for="PassWord" type="text" placeholder="密码" class="input-text" vaule="" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>手机号码:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input id="Phone" asp-for="Phone" type="text" placeholder="手机号码" class="input-text" vaule="" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>全名:</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input id="FullName" asp-for="FullName" type="text" placeholder="全名" class="input-text" vaule="" />
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>选择角色：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <span class="select-box">
+                    <select class="select" size="1"  asp-for="RoleId"></select>
+                </span>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <input id="addsysOperator" class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</article>
+
+@*
+    --------------
+    页面底部JS脚本
+    --------------
+*@
+@section css{
+    <link href="~/admin/lib/jquery.ui/1.12.1/jquery-ui.css" rel="stylesheet" />
+}
+@section scripts{
+    <!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="~/admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="~/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+    <script type="text/javascript" src="~/admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $.mainu = {
+                init: function () {
+                    $('.skin-minimal input').iCheck({
+                        checkboxClass: 'icheckbox-blue',
+                        radioClass: 'iradio-blue',
+                        increaseArea: '20%'
+                    });
+                    var roleid = '@ViewData["roleid"]';
+                    $.mainu.getRole(roleid);
+                },
+                getRole: function (setRoleId) {
+                    var url = "@Url.Action("GetRoleList")";
+                    $.ajaxSetup({ cache: false });
+                    $.get(url, { id: 0 }, function (result) {
+                        var state = result.statusMessage;
+                        var strOption = '<option value="" selected>请选择角色</option>';
+                        if (state == "success") {
+                            var list = result.result;
+
+                            for (var i = 0; i < list.length; i++) {
+
+                                if (setRoleId == list[i].id)
+                                    strOption += '<option value="' + list[i].id + '" selected>' + list[i].name + '</option>';
+                                else
+                                    strOption += '<option value="' + list[i].id + '">' + list[i].name + '</option>';
+                            }
+                        }
+                        $("#RoleId").html(strOption);
+                    });
+                },
+                formSubmit: function () {
+                    var options = {
+                        cache: false,
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            if (XMLHttpRequest.status != 200) {
+                                layer.alert('系统忙！', { icon: 5 });
+                            }
+                        },
+                        success: function (result) {
+                            var message = result.statusMessage;
+                            if (message == "success") {
+                                var index = parent.layer.getFrameIndex(window.name);
+                                parent.location.reload();
+                                parent.layer.close(index);
+                            } else {
+                                layer.tips(message, "#addsysOperator");
+                            }
+                        }
+                    };
+                    $("#form-add").ajaxForm(options);
+                }
+            };
+            $(function () {
+                $.mainu.init();
+                $.mainu.formSubmit();
+            });
+
+        })(jQuery);
+    </script>
+}
+

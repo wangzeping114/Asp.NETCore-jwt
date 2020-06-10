@@ -1,0 +1,14 @@
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\HYPJ.Infrastructure.deps.json
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\HYPJ.Infrastructure.dll
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\HYPJ.Infrastructure.pdb
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\HYPJ.Core.dll
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\HYPJ.Core.pdb
+G:\HYPJ\HYPJ.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.csprojAssemblyReference.cache
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.AssemblyInfoInputs.cache
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.AssemblyInfo.cs
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.csproj.CopyComplete
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.dll
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.pdb
+G:\HYPJ\HYPJ.Infrastructure\obj\Debug\netcoreapp2.1\HYPJ.Infrastructure.csproj.CoreCompileInputs.cache

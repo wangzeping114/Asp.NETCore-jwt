@@ -1,0 +1,5 @@
+G:\HYPJ\HYPJ.MVC.Admin\obj\Debug\netcoreapp2.1\HYPJ.MVC.Admin.csprojAssemblyReference.cache
+G:\HYPJ\HYPJ.MVC.Admin\obj\Debug\netcoreapp2.1\HYPJ.MVC.Admin.RazorAssemblyInfo.cache
+G:\HYPJ\HYPJ.MVC.Admin\obj\Debug\netcoreapp2.1\HYPJ.MVC.Admin.RazorAssemblyInfo.cs
+G:\HYPJ\HYPJ.MVC.Admin\obj\Debug\netcoreapp2.1\HYPJ.MVC.Admin.AssemblyInfoInputs.cache
+G:\HYPJ\HYPJ.MVC.Admin\obj\Debug\netcoreapp2.1\HYPJ.MVC.Admin.AssemblyInfo.cs

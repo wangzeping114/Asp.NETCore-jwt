@@ -1,0 +1,33 @@
+﻿@model List<HYPJ.Applicatoin.Resources.ModuleResource>
+<li class="treeview">
+    <a href="@Url.Action("Index","Home")" addtabs="15">
+        <i class="fa fa-star"></i> <span>起始页</span>
+        <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+        </span>
+    </a>
+</li>
+@foreach (var item in Model)
+{
+    <li class="treeview">
+        <a href="#">
+            <i class="fa @item.Icon"></i> <span>@item.Name</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+            @foreach (var item2 in item.ModuleInfoResources.Where(p =>p.Disabled))
+            {
+                
+                <li>
+                    <a href="@item2.ActionSref">
+                        <i class="fa @item2.Icon"></i>
+                        <span>@item2.Name</span>
+                        <span class="pull-right-container"> </span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </li>
+}

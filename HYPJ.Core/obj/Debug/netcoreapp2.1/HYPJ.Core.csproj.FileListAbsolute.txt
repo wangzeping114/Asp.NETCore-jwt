@@ -1,0 +1,9 @@
+G:\HYPJ\HYPJ.Core\bin\Debug\netcoreapp2.1\HYPJ.Core.deps.json
+G:\HYPJ\HYPJ.Core\bin\Debug\netcoreapp2.1\HYPJ.Core.dll
+G:\HYPJ\HYPJ.Core\bin\Debug\netcoreapp2.1\HYPJ.Core.pdb
+G:\HYPJ\HYPJ.Core\obj\Debug\netcoreapp2.1\HYPJ.Core.csprojAssemblyReference.cache
+G:\HYPJ\HYPJ.Core\obj\Debug\netcoreapp2.1\HYPJ.Core.AssemblyInfoInputs.cache
+G:\HYPJ\HYPJ.Core\obj\Debug\netcoreapp2.1\HYPJ.Core.AssemblyInfo.cs
+G:\HYPJ\HYPJ.Core\obj\Debug\netcoreapp2.1\HYPJ.Core.dll
+G:\HYPJ\HYPJ.Core\obj\Debug\netcoreapp2.1\HYPJ.Core.pdb
+G:\HYPJ\HYPJ.Core\obj\Debug\netcoreapp2.1\HYPJ.Core.csproj.CoreCompileInputs.cache

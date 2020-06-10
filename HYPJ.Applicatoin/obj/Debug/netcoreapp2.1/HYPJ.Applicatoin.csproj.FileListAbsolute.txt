@@ -1,0 +1,16 @@
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Applicatoin.deps.json
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Applicatoin.dll
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Applicatoin.pdb
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Core.dll
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Utilities.dll
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Core.pdb
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\HYPJ.Utilities.pdb
+G:\HYPJ\HYPJ.Applicatoin\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.csprojAssemblyReference.cache
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.AssemblyInfoInputs.cache
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.AssemblyInfo.cs
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.csproj.CopyComplete
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.dll
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.pdb
+G:\HYPJ\HYPJ.Applicatoin\obj\Debug\netcoreapp2.1\HYPJ.Applicatoin.csproj.CoreCompileInputs.cache
